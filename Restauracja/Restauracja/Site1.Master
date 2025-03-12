@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Restauracja.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Restauracja</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header>
+                <div class="header-menu">
+                    <nav class="navbar navbar-expand-lg">
+                      <div class="container-fluid">
+                        <a class="navbar-brand" href="#" style="color:#fff;"><img src="Photo/restaurant-regular-24.png" alt="logo restauracji" class="logo" />Restauracja</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarText">
+                          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                              <a class="nav-link" style="color:#fff;" href="#menu">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" style="color:#fff;" href="Galeria.aspx">Galeria</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" style="color:#fff;" href="Logowanie-Rejestracja.aspx">Rejestracja</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" style="color:#fff;" href="Logowanie-Rejestracja.aspx">Logowanie</a>
+                            </li>
+                          </ul>
+                          <span class="navbar-text">
+                              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                  <a class="nav-link" style="color:#fff;" href="Regulamin.aspx">Regulamin</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" style="color:#fff;" href="Polityka_Prywatnosci.aspx">Polityka Prywatności</a>
+                                </li>
+                                 <li class="nav-item">
+                                  <a class="nav-link" href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANtJREFUSEvdldERgjAQRHc7kU6kE/nVIsQi9Fc6kU6kk3UyA8yhoOFiPjSfTHLvdvcSiMyLmevjjwCS9EW7OpJFqDdalB0wdC/pCKBOVFORbCYKDGAD4J4CIDk6MztFkm4Atk5IQ7Iazi4BdgCuTkBBsvsE8No06X42A5OFx6aSZGuVL95kSSGDAIldLcnyefM7gLXppbNY6tu3SFIIOgRekzzFFo2yKGxaY5Od/WhAD4m62W6Ax5ZVCnoVZwB7ABeSBzPKs989gPEpt1bYFzjJIkl5FaTk8Pv/5Af3uVoZGTPukQAAAABJRU5ErkJggg=="/></a>
+                                </li>
+                              </ul>
+                          </span>
+                        </div>
+                      </div>
+                    </nav>
+                </div>
+            </header>
+            <main>
+                <div class="main-content">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                </div>
+            </main>
+            
+            <footer>
+                
+                    <p>Copyright 2023. All rights reserved.</p>
+                
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
